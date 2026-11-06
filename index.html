@@ -17,7 +17,29 @@
 </head>
 
 <body>
-  <header>
+  <!-- LANGUAGE SELECTION SCREEN -->
+  <section id="language-landing" class="language-landing">
+    <div class="language-landing-content">
+      <h1>Choose your language</h1>
+
+      <div class="language-choices">
+        <a
+          class="language-choice language-choice-en"
+          href="?lang=en"
+          lang="en"
+        >English</a>
+
+        <a
+          class="language-choice language-choice-ja"
+          href="?lang=ja"
+          lang="ja"
+        >日本語</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXISTING PORTFOLIO HEADER -->
+  <header id="portfolio-header" hidden>
     <nav aria-label="Main navigation">
       <a class="brand" href="#home">Portfolio</a>
 
@@ -65,366 +87,367 @@
     </nav>
   </header>
 
-  
-<main>
-  <!-- HERO -->
-  <section id="home" class="hero">
-    <p class="eyebrow"
-       data-en="BUSINESS × TECHNOLOGY × TRANSFORMATION"
-       data-ja="ビジネス × テクノロジー × 変革">
-      BUSINESS × TECHNOLOGY × TRANSFORMATION
-    </p>
-
-    <h1
-      data-en="Turning business problems into practical solutions."
-      data-ja="ビジネス課題を、実践的な解決策へ。">
-      Turning business problems into practical solutions.
-    </h1>
-
-    <p
-      data-en="I am building a portfolio that demonstrates how business analysis, data, and technology can improve processes and support better decisions."
-      data-ja="ビジネス分析、データ、テクノロジーを活用し、業務改善とより良い意思決定を支援する力を示すポートフォリオを制作しています。">
-      I am building a portfolio that demonstrates how business analysis,
-      data, and technology can improve processes and support better decisions.
-    </p>
-
-    <div class="hero-actions">
-      <a class="button button-primary" href="#projects"
-         data-en="Explore projects"
-         data-ja="プロジェクトを見る">
-        Explore projects
-      </a>
-
-      <a class="button button-secondary" href="#about"
-         data-en="About me"
-         data-ja="プロフィール">
-        About me
-      </a>
-    </div>
-  </section>
-
-  <!-- CAREER FOCUS -->
-  <section id="focus">
-    <p class="eyebrow"
-       data-en="CAREER DIRECTION"
-       data-ja="キャリアの方向性">
-      CAREER DIRECTION
-    </p>
-
-    <h2
-      data-en="Where business meets technology"
-      data-ja="ビジネスとテクノロジーをつなぐ">
-      Where business meets technology
-    </h2>
-
-    <p
-      data-en="My target is work that connects business needs, analytical thinking, technology, and implementation."
-      data-ja="ビジネス上のニーズ、分析的思考、テクノロジー、そして実行をつなぐ仕事を目指しています。">
-      My target is work that connects business needs, analytical thinking,
-      technology, and implementation.
-    </p>
-
-    <ol class="career-list">
-      <li data-en="IT Business Analysis & Digital Transformation"
-          data-ja="ITビジネスアナリシス・デジタルトランスフォーメーション">
-        IT Business Analysis & Digital Transformation
-      </li>
-      <li data-en="Business Operations, Process Analytics & Process Improvement"
-          data-ja="業務運営・業務分析・業務改善">
-        Business Operations, Process Analytics &amp; Process Improvement
-      </li>
-      <li data-en="Business Intelligence, Reporting & Data Analytics"
-          data-ja="ビジネスインテリジェンス・レポーティング・データ分析">
-        Business Intelligence, Reporting &amp; Data Analytics
-      </li>
-      <li data-en="Solutions, Implementation & Pre-Sales"
-          data-ja="ソリューション・導入支援・プリセールス">
-        Solutions, Implementation &amp; Pre-Sales
-      </li>
-      <li data-en="Product Analytics & Product Management"
-          data-ja="プロダクト分析・プロダクトマネジメント">
-        Product Analytics &amp; Product Management
-      </li>
-      <li data-en="Management & Strategy Consulting"
-          data-ja="経営・戦略コンサルティング">
-        Management &amp; Strategy Consulting
-      </li>
-    </ol>
-  </section>
-
-  <!-- PROJECTS -->
-  <section id="projects">
-    <p class="eyebrow"
-       data-en="INDEPENDENT WORK"
-       data-ja="個人制作プロジェクト">
-      INDEPENDENT WORK
-    </p>
-
-    <h2 data-en="Selected projects" data-ja="主なプロジェクト">
-      Selected projects
-    </h2>
-
-    <p
-      data-en="Eight planned projects using public or synthetic data. Each project will document its methods, evidence, limitations, and business implications."
-      data-ja="公開データまたは合成データを用いた8つのプロジェクトを予定しています。各プロジェクトでは、手法、根拠、限界、ビジネス上の示唆を明示します。">
-      Eight planned projects using public or synthetic data. Each project
-      will document its methods, evidence, limitations, and business implications.
-    </p>
-
-    <!-- TOP PRIORITY -->
-    <div class="project-group">
-      <h3 data-en="Priority group 1" data-ja="優先グループ 1">
-        Priority group 1
-      </h3>
-
-      <div class="project-grid">
-        <article class="project-card">
-          <p class="project-number">01</p>
-          <h3 data-en="Enterprise Process & BI Transformation"
-              data-ja="企業業務プロセス・BI変革">
-            Enterprise Process &amp; BI Transformation
-          </h3>
-          <p data-en="Requirements, process analysis, KPI design, BI architecture, and implementation planning."
-             data-ja="要件定義、業務プロセス分析、KPI設計、BIアーキテクチャ、導入計画。">
-            Requirements, process analysis, KPI design, BI architecture,
-            and implementation planning.
-          </p>
-          <span class="project-status"
-                data-en="In development"
-                data-ja="制作予定">
-            In development
-          </span>
-        </article>
-
-        <article class="project-card">
-          <p class="project-number">02</p>
-          <h3 data-en="Business Process Automation & Data Quality"
-              data-ja="業務プロセス自動化・データ品質">
-            Business Process Automation &amp; Data Quality
-          </h3>
-          <p data-en="Process improvement, automated data preparation, validation, exception handling, and controls."
-             data-ja="業務改善、データ処理の自動化、検証、例外処理、内部統制。">
-            Process improvement, automated data preparation, validation,
-            exception handling, and controls.
-          </p>
-          <span class="project-status"
-                data-en="In development"
-                data-ja="制作予定">
-            In development
-          </span>
-        </article>
-
-        <article class="project-card">
-          <p class="project-number">03</p>
-          <h3 data-en="Enterprise Transaction & Performance Intelligence"
-              data-ja="企業取引・業績インテリジェンス">
-            Enterprise Transaction &amp; Performance Intelligence
-          </h3>
-          <p data-en="Transactional data modelling, KPI analysis, SQL, performance trends, and decision-focused reporting."
-             data-ja="取引データモデリング、KPI分析、SQL、業績トレンド、意思決定を支援するレポーティング。">
-            Transactional data modelling, KPI analysis, SQL,
-            performance trends, and decision-focused reporting.
-          </p>
-          <span class="project-status"
-                data-en="In development"
-                data-ja="制作予定">
-            In development
-          </span>
-        </article>
-      </div>
-    </div>
-
-    <!-- MIDDLE PRIORITY -->
-    <div class="project-group">
-      <h3 data-en="Priority group 2" data-ja="優先グループ 2">
-        Priority group 2
-      </h3>
-
-      <div class="project-grid">
-        <article class="project-card">
-          <p class="project-number">04</p>
-          <h3 data-en="Enterprise Solution Design & Data Integration"
-              data-ja="企業向けソリューション設計・データ統合">
-            Enterprise Solution Design &amp; Data Integration
-          </h3>
-          <p data-en="Requirements, data flows, interfaces, architecture trade-offs, testing, and implementation."
-             data-ja="要件定義、データフロー、インターフェース、アーキテクチャの比較検討、テスト、導入。">
-            Requirements, data flows, interfaces, architecture trade-offs,
-            testing, and implementation.
-          </p>
-          <span class="project-status"
-                data-en="In development"
-                data-ja="制作予定">
-            In development
-          </span>
-        </article>
-
-        <article class="project-card">
-          <p class="project-number">05</p>
-          <h3 data-en="Digital Product & Customer Journey Analytics"
-              data-ja="デジタルプロダクト・顧客行動分析">
-            Digital Product &amp; Customer Journey Analytics
-          </h3>
-          <p data-en="Customer journeys, funnels, engagement, retention, segmentation, and evidence-based product recommendations."
-             data-ja="顧客行動、ファネル、エンゲージメント、継続率、セグメンテーション、データに基づく改善提案。">
-            Customer journeys, funnels, engagement, retention, segmentation,
-            and evidence-based product recommendations.
-          </p>
-          <span class="project-status"
-                data-en="In development"
-                data-ja="制作予定">
-            In development
-          </span>
-        </article>
-
-        <article class="project-card">
-          <p class="project-number">06</p>
-          <h3 data-en="Commercial Pipeline, Revenue & Customer Intelligence"
-              data-ja="営業パイプライン・収益・顧客インテリジェンス">
-            Commercial Pipeline, Revenue &amp; Customer Intelligence
-          </h3>
-          <p data-en="Pipeline conversion, forecasting assumptions, customer segmentation, and commercial performance."
-             data-ja="営業パイプラインの転換率、予測の前提条件、顧客セグメンテーション、営業業績。">
-            Pipeline conversion, forecasting assumptions, customer
-            segmentation, and commercial performance.
-          </p>
-          <span class="project-status"
-                data-en="In development"
-                data-ja="制作予定">
-            In development
-          </span>
-        </article>
-      </div>
-    </div>
-
-    <!-- LOWER PRIORITY -->
-    <div class="project-group">
-      <h3 data-en="Priority group 3" data-ja="優先グループ 3">
-        Priority group 3
-      </h3>
-
-      <div class="project-grid">
-        <article class="project-card">
-          <p class="project-number">07</p>
-          <h3 data-en="Japanese Market Entry & Financial Decision Model"
-              data-ja="日本市場参入・財務意思決定モデル">
-            Japanese Market Entry &amp; Financial Decision Model
-          </h3>
-          <p data-en="Japanese market research, transparent financial assumptions, scenario modelling, and sensitivity analysis."
-             data-ja="日本市場調査、明確な財務上の前提条件、シナリオ分析、感度分析。">
-            Japanese market research, transparent financial assumptions,
-            scenario modelling, and sensitivity analysis.
-          </p>
-          <span class="project-status"
-                data-en="In development"
-                data-ja="制作予定">
-            In development
-          </span>
-        </article>
-
-        <article class="project-card">
-          <p class="project-number">08</p>
-          <h3 data-en="AI-Powered Enterprise Operations Transformation"
-              data-ja="AIを活用した企業業務変革">
-            AI-Powered Enterprise Operations Transformation
-          </h3>
-          <p data-en="Source-grounded knowledge retrieval, answer evaluation, risk controls, and a practical transformation roadmap."
-             data-ja="根拠資料に基づく情報検索、回答評価、リスク管理、実践的な業務変革ロードマップ。">
-            Source-grounded knowledge retrieval, answer evaluation,
-            risk controls, and a practical transformation roadmap.
-          </p>
-          <span class="project-status"
-                data-en="In development"
-                data-ja="制作予定">
-            In development
-          </span>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- SKILLS -->
-  <section id="skills">
-    <p class="eyebrow"
-       data-en="CAPABILITIES"
-       data-ja="スキル">
-      CAPABILITIES
-    </p>
-
-    <h2 data-en="Skills & languages" data-ja="スキル・言語">
-      Skills &amp; languages
-    </h2>
-
-    <div class="skill-group">
-      <h3 data-en="Tools and technologies"
-          data-ja="ツール・テクノロジー">
-        Tools and technologies
-      </h3>
-      <p>
-        SQL · Python (Pandas) · Excel · VBA · Power Query · Power BI
+  <!-- EXISTING PORTFOLIO MAIN -->
+  <main id="portfolio-main" hidden>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <p class="eyebrow"
+         data-en="BUSINESS × TECHNOLOGY × TRANSFORMATION"
+         data-ja="ビジネス × テクノロジー × 変革">
+        BUSINESS × TECHNOLOGY × TRANSFORMATION
       </p>
-    </div>
 
-    <div class="skill-group">
-      <h3 data-en="Languages" data-ja="言語">Languages</h3>
-      <p data-en="English · Hindi · Japanese (JLPT N2)"
-         data-ja="英語・ヒンディー語・日本語（JLPT N2）">
-        English · Hindi · Japanese (JLPT N2)
+      <h1
+        data-en="Turning business problems into practical solutions."
+        data-ja="ビジネス課題を、実践的な解決策へ。">
+        Turning business problems into practical solutions.
+      </h1>
+
+      <p
+        data-en="I am building a portfolio that demonstrates how business analysis, data, and technology can improve processes and support better decisions."
+        data-ja="ビジネス分析、データ、テクノロジーを活用し、業務改善とより良い意思決定を支援する力を示すポートフォリオを制作しています。">
+        I am building a portfolio that demonstrates how business analysis,
+        data, and technology can improve processes and support better decisions.
       </p>
-    </div>
 
-    <p class="note"
-       data-en="Skills will be demonstrated through independent work. Language qualifications and practical communication ability are distinct."
-       data-ja="スキルは個人制作プロジェクトを通じて示します。語学資格と実際のコミュニケーション能力は別のものとして扱います。">
-      Skills will be demonstrated through independent work. Language
-      qualifications and practical communication ability are distinct.
-    </p>
-  </section>
+      <div class="hero-actions">
+        <a class="button button-primary" href="#projects"
+           data-en="Explore projects"
+           data-ja="プロジェクトを見る">
+          Explore projects
+        </a>
 
-  <!-- ABOUT -->
-  <section id="about">
-    <p class="eyebrow"
-       data-en="BACKGROUND"
-       data-ja="経歴">
-      BACKGROUND
-    </p>
+        <a class="button button-secondary" href="#about"
+           data-en="About me"
+           data-ja="プロフィール">
+          About me
+        </a>
+      </div>
+    </section>
 
-    <h2 data-en="About me" data-ja="プロフィール">About me</h2>
+    <!-- CAREER FOCUS -->
+    <section id="focus">
+      <p class="eyebrow"
+         data-en="CAREER DIRECTION"
+         data-ja="キャリアの方向性">
+        CAREER DIRECTION
+      </p>
 
-    <p data-en="I hold a Bachelor of Business Administration in Banking & Finance from Jagannath University (2022–2025). My portfolio focuses on connecting business analysis, analytics, automation, and technology implementation."
-       data-ja="ジャガンナート大学にて経営学学士（銀行・金融専攻）を取得しました（2022～2025年）。ビジネス分析、データ分析、自動化、テクノロジー導入をつなぐことをテーマに、ポートフォリオを制作しています。">
-      I hold a Bachelor of Business Administration in Banking &amp; Finance
-      from Jagannath University (2022–2025). My portfolio focuses on
-      connecting business analysis, analytics, automation, and technology
-      implementation.
-    </p>
+      <h2
+        data-en="Where business meets technology"
+        data-ja="ビジネスとテクノロジーをつなぐ">
+        Where business meets technology
+      </h2>
 
-    <p data-en="My long-term goal is to grow into roles with greater ownership, leadership, and strategic decision-making responsibility."
-       data-ja="長期的には、より大きな責任を担い、リーダーシップと戦略的な意思決定に携わる役割を目指しています。">
-      My long-term goal is to grow into roles with greater ownership,
-      leadership, and strategic decision-making responsibility.
-    </p>
-  </section>
+      <p
+        data-en="My target is work that connects business needs, analytical thinking, technology, and implementation."
+        data-ja="ビジネス上のニーズ、分析的思考、テクノロジー、そして実行をつなぐ仕事を目指しています。">
+        My target is work that connects business needs, analytical thinking,
+        technology, and implementation.
+      </p>
 
-  <!-- CONTACT -->
-  <section id="contact">
-    <p class="eyebrow"
-       data-en="GET IN TOUCH"
-       data-ja="お問い合わせ">
-      GET IN TOUCH
-    </p>
+      <ol class="career-list">
+        <li data-en="IT Business Analysis & Digital Transformation"
+            data-ja="ITビジネスアナリシス・デジタルトランスフォーメーション">
+          IT Business Analysis & Digital Transformation
+        </li>
+        <li data-en="Business Operations, Process Analytics & Process Improvement"
+            data-ja="業務運営・業務分析・業務改善">
+          Business Operations, Process Analytics &amp; Process Improvement
+        </li>
+        <li data-en="Business Intelligence, Reporting & Data Analytics"
+            data-ja="ビジネスインテリジェンス・レポーティング・データ分析">
+          Business Intelligence, Reporting &amp; Data Analytics
+        </li>
+        <li data-en="Solutions, Implementation & Pre-Sales"
+            data-ja="ソリューション・導入支援・プリセールス">
+          Solutions, Implementation &amp; Pre-Sales
+        </li>
+        <li data-en="Product Analytics & Product Management"
+            data-ja="プロダクト分析・プロダクトマネジメント">
+          Product Analytics &amp; Product Management
+        </li>
+        <li data-en="Management & Strategy Consulting"
+            data-ja="経営・戦略コンサルティング">
+          Management &amp; Strategy Consulting
+        </li>
+      </ol>
+    </section>
 
-    <h2 data-en="Contact" data-ja="お問い合わせ">Contact</h2>
+    <!-- PROJECTS -->
+    <section id="projects">
+      <p class="eyebrow"
+         data-en="INDEPENDENT WORK"
+         data-ja="個人制作プロジェクト">
+        INDEPENDENT WORK
+      </p>
 
-    <p data-en="For professional opportunities and conversations about my independent projects, contact details will be provided here."
-       data-ja="採用に関するご連絡や個人制作プロジェクトについてのお問い合わせに向けて、連絡先をこちらに掲載する予定です。">
-      For professional opportunities and conversations about my independent
-      projects, contact details will be provided here.
-    </p>
-  </section>
-</main>
+      <h2 data-en="Selected projects" data-ja="主なプロジェクト">
+        Selected projects
+      </h2>
 
-  <footer>
+      <p
+        data-en="Eight planned projects using public or synthetic data. Each project will document its methods, evidence, limitations, and business implications."
+        data-ja="公開データまたは合成データを用いた8つのプロジェクトを予定しています。各プロジェクトでは、手法、根拠、限界、ビジネス上の示唆を明示します。">
+        Eight planned projects using public or synthetic data. Each project
+        will document its methods, evidence, limitations, and business implications.
+      </p>
+
+      <!-- TOP PRIORITY -->
+      <div class="project-group">
+        <h3 data-en="Priority group 1" data-ja="優先グループ 1">
+          Priority group 1
+        </h3>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <p class="project-number">01</p>
+            <h3 data-en="Enterprise Process & BI Transformation"
+                data-ja="企業業務プロセス・BI変革">
+              Enterprise Process &amp; BI Transformation
+            </h3>
+            <p data-en="Requirements, process analysis, KPI design, BI architecture, and implementation planning."
+               data-ja="要件定義、業務プロセス分析、KPI設計、BIアーキテクチャ、導入計画。">
+              Requirements, process analysis, KPI design, BI architecture,
+              and implementation planning.
+            </p>
+            <span class="project-status"
+                  data-en="In development"
+                  data-ja="制作予定">
+              In development
+            </span>
+          </article>
+
+          <article class="project-card">
+            <p class="project-number">02</p>
+            <h3 data-en="Business Process Automation & Data Quality"
+                data-ja="業務プロセス自動化・データ品質">
+              Business Process Automation &amp; Data Quality
+            </h3>
+            <p data-en="Process improvement, automated data preparation, validation, exception handling, and controls."
+               data-ja="業務改善、データ処理の自動化、検証、例外処理、内部統制。">
+              Process improvement, automated data preparation, validation,
+              exception handling, and controls.
+            </p>
+            <span class="project-status"
+                  data-en="In development"
+                  data-ja="制作予定">
+              In development
+            </span>
+          </article>
+
+          <article class="project-card">
+            <p class="project-number">03</p>
+            <h3 data-en="Enterprise Transaction & Performance Intelligence"
+                data-ja="企業取引・業績インテリジェンス">
+              Enterprise Transaction &amp; Performance Intelligence
+            </h3>
+            <p data-en="Transactional data modelling, KPI analysis, SQL, performance trends, and decision-focused reporting."
+               data-ja="取引データモデリング、KPI分析、SQL、業績トレンド、意思決定を支援するレポーティング。">
+              Transactional data modelling, KPI analysis, SQL,
+              performance trends, and decision-focused reporting.
+            </p>
+            <span class="project-status"
+                  data-en="In development"
+                  data-ja="制作予定">
+              In development
+            </span>
+          </article>
+        </div>
+      </div>
+
+      <!-- MIDDLE PRIORITY -->
+      <div class="project-group">
+        <h3 data-en="Priority group 2" data-ja="優先グループ 2">
+          Priority group 2
+        </h3>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <p class="project-number">04</p>
+            <h3 data-en="Enterprise Solution Design & Data Integration"
+                data-ja="企業向けソリューション設計・データ統合">
+              Enterprise Solution Design &amp; Data Integration
+            </h3>
+            <p data-en="Requirements, data flows, interfaces, architecture trade-offs, testing, and implementation."
+               data-ja="要件定義、データフロー、インターフェース、アーキテクチャの比較検討、テスト、導入。">
+              Requirements, data flows, interfaces, architecture trade-offs,
+              testing, and implementation.
+            </p>
+            <span class="project-status"
+                  data-en="In development"
+                  data-ja="制作予定">
+              In development
+            </span>
+          </article>
+
+          <article class="project-card">
+            <p class="project-number">05</p>
+            <h3 data-en="Digital Product & Customer Journey Analytics"
+                data-ja="デジタルプロダクト・顧客行動分析">
+              Digital Product &amp; Customer Journey Analytics
+            </h3>
+            <p data-en="Customer journeys, funnels, engagement, retention, segmentation, and evidence-based product recommendations."
+               data-ja="顧客行動、ファネル、エンゲージメント、継続率、セグメンテーション、データに基づく改善提案。">
+              Customer journeys, funnels, engagement, retention, segmentation,
+              and evidence-based product recommendations.
+            </p>
+            <span class="project-status"
+                  data-en="In development"
+                  data-ja="制作予定">
+              In development
+            </span>
+          </article>
+
+          <article class="project-card">
+            <p class="project-number">06</p>
+            <h3 data-en="Commercial Pipeline, Revenue & Customer Intelligence"
+                data-ja="営業パイプライン・収益・顧客インテリジェンス">
+              Commercial Pipeline, Revenue &amp; Customer Intelligence
+            </h3>
+            <p data-en="Pipeline conversion, forecasting assumptions, customer segmentation, and commercial performance."
+               data-ja="営業パイプラインの転換率、予測の前提条件、顧客セグメンテーション、営業業績。">
+              Pipeline conversion, forecasting assumptions, customer
+              segmentation, and commercial performance.
+            </p>
+            <span class="project-status"
+                  data-en="In development"
+                  data-ja="制作予定">
+              In development
+            </span>
+          </article>
+        </div>
+      </div>
+
+      <!-- LOWER PRIORITY -->
+      <div class="project-group">
+        <h3 data-en="Priority group 3" data-ja="優先グループ 3">
+          Priority group 3
+        </h3>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <p class="project-number">07</p>
+            <h3 data-en="Japanese Market Entry & Financial Decision Model"
+                data-ja="日本市場参入・財務意思決定モデル">
+              Japanese Market Entry &amp; Financial Decision Model
+            </h3>
+            <p data-en="Japanese market research, transparent financial assumptions, scenario modelling, and sensitivity analysis."
+               data-ja="日本市場調査、明確な財務上の前提条件、シナリオ分析、感度分析。">
+              Japanese market research, transparent financial assumptions,
+              scenario modelling, and sensitivity analysis.
+            </p>
+            <span class="project-status"
+                  data-en="In development"
+                  data-ja="制作予定">
+              In development
+            </span>
+          </article>
+
+          <article class="project-card">
+            <p class="project-number">08</p>
+            <h3 data-en="AI-Powered Enterprise Operations Transformation"
+                data-ja="AIを活用した企業業務変革">
+              AI-Powered Enterprise Operations Transformation
+            </h3>
+            <p data-en="Source-grounded knowledge retrieval, answer evaluation, risk controls, and a practical transformation roadmap."
+               data-ja="根拠資料に基づく情報検索、回答評価、リスク管理、実践的な業務変革ロードマップ。">
+              Source-grounded knowledge retrieval, answer evaluation,
+              risk controls, and a practical transformation roadmap.
+            </p>
+            <span class="project-status"
+                  data-en="In development"
+                  data-ja="制作予定">
+              In development
+            </span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <p class="eyebrow"
+         data-en="CAPABILITIES"
+         data-ja="スキル">
+        CAPABILITIES
+      </p>
+
+      <h2 data-en="Skills & languages" data-ja="スキル・言語">
+        Skills &amp; languages
+      </h2>
+
+      <div class="skill-group">
+        <h3 data-en="Tools and technologies"
+            data-ja="ツール・テクノロジー">
+          Tools and technologies
+        </h3>
+        <p>
+          SQL · Python (Pandas) · Excel · VBA · Power Query · Power BI
+        </p>
+      </div>
+
+      <div class="skill-group">
+        <h3 data-en="Languages" data-ja="言語">Languages</h3>
+        <p data-en="English · Hindi · Japanese (JLPT N2)"
+           data-ja="英語・ヒンディー語・日本語（JLPT N2）">
+          English · Hindi · Japanese (JLPT N2)
+        </p>
+      </div>
+
+      <p class="note"
+         data-en="Skills will be demonstrated through independent work. Language qualifications and practical communication ability are distinct."
+         data-ja="スキルは個人制作プロジェクトを通じて示します。語学資格と実際のコミュニケーション能力は別のものとして扱います。">
+        Skills will be demonstrated through independent work. Language
+        qualifications and practical communication ability are distinct.
+      </p>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <p class="eyebrow"
+         data-en="BACKGROUND"
+         data-ja="経歴">
+        BACKGROUND
+      </p>
+
+      <h2 data-en="About me" data-ja="プロフィール">About me</h2>
+
+      <p data-en="I hold a Bachelor of Business Administration in Banking & Finance from Jagannath University (2022–2025). My portfolio focuses on connecting business analysis, analytics, automation, and technology implementation."
+         data-ja="ジャガンナート大学にて経営学学士（銀行・金融専攻）を取得しました（2022～2025年）。ビジネス分析、データ分析、自動化、テクノロジー導入をつなぐことをテーマに、ポートフォリオを制作しています。">
+        I hold a Bachelor of Business Administration in Banking &amp; Finance
+        from Jagannath University (2022–2025). My portfolio focuses on
+        connecting business analysis, analytics, automation, and technology
+        implementation.
+      </p>
+
+      <p data-en="My long-term goal is to grow into roles with greater ownership, leadership, and strategic decision-making responsibility."
+         data-ja="長期的には、より大きな責任を担い、リーダーシップと戦略的な意思決定に携わる役割を目指しています。">
+        My long-term goal is to grow into roles with greater ownership,
+        leadership, and strategic decision-making responsibility.
+      </p>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <p class="eyebrow"
+         data-en="GET IN TOUCH"
+         data-ja="お問い合わせ">
+        GET IN TOUCH
+      </p>
+
+      <h2 data-en="Contact" data-ja="お問い合わせ">Contact</h2>
+
+      <p data-en="For professional opportunities and conversations about my independent projects, contact details will be provided here."
+         data-ja="採用に関するご連絡や個人制作プロジェクトについてのお問い合わせに向けて、連絡先をこちらに掲載する予定です。">
+        For professional opportunities and conversations about my independent
+        projects, contact details will be provided here.
+      </p>
+    </section>
+  </main>
+
+  <!-- EXISTING PORTFOLIO FOOTER -->
+  <footer id="portfolio-footer" hidden>
     <p
       data-en="Portfolio · English · Japanese"
       data-ja="ポートフォリオ · 英語 · 日本語"
@@ -434,6 +457,18 @@
   <script>
     const englishButton = document.getElementById("lang-en");
     const japaneseButton = document.getElementById("lang-ja");
+
+    const languageLanding = document.getElementById("language-landing");
+    const portfolioHeader = document.getElementById("portfolio-header");
+    const portfolioMain = document.getElementById("portfolio-main");
+    const portfolioFooter = document.getElementById("portfolio-footer");
+
+    function showPortfolio() {
+      languageLanding.hidden = true;
+      portfolioHeader.hidden = false;
+      portfolioMain.hidden = false;
+      portfolioFooter.hidden = false;
+    }
 
     function setLanguage(language, savePreference = true) {
       document.documentElement.lang = language;
@@ -469,19 +504,13 @@
       setLanguage("ja");
     });
 
-    let savedLanguage = "en";
+    const urlParameters = new URLSearchParams(window.location.search);
+    const requestedLanguage = urlParameters.get("lang");
 
-    try {
-      const saved = localStorage.getItem("portfolio-language");
-
-      if (saved === "en" || saved === "ja") {
-        savedLanguage = saved;
-      }
-    } catch (error) {
-      // English is the default if storage is unavailable.
+    if (requestedLanguage === "en" || requestedLanguage === "ja") {
+      showPortfolio();
+      setLanguage(requestedLanguage, true);
     }
-
-    setLanguage(savedLanguage, false);
   </script>
 </body>
 </html>
