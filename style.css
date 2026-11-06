@@ -1,18 +1,18 @@
 
 /* ========================================
-   PORTFOLIO — LANGUAGE ENTRY + SITE
+   PROJECT TOKYO — PORTFOLIO DESIGN
    ======================================== */
 
 :root {
   color-scheme: light;
-  --page-bg: #ffffff;
+  --page-bg: #f5f7fa;
   --surface: #ffffff;
   --text: #17212f;
   --muted: #647184;
   --accent: #2457c5;
-  --accent-hover: #2457c5;
+  --accent-hover: #19449e;
   --border: #e1e6ed;
-  --soft-accent: #2457c5;
+  --soft-accent: #edf3ff;
   --content-width: 1120px;
   --radius: 14px;
   --shadow: 0 8px 30px rgba(23, 33, 47, 0.05);
@@ -20,10 +20,6 @@
 
 * {
   box-sizing: border-box;
-}
-
-[hidden] {
-  display: none !important;
 }
 
 html {
@@ -35,8 +31,10 @@ body {
   margin: 0;
   background: var(--page-bg);
   color: var(--text);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-    "Noto Sans", "Noto Sans JP", "Yu Gothic", Meiryo, sans-serif;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Noto Sans", "Noto Sans JP", "Yu Gothic",
+    Meiryo, sans-serif;
   font-size: 16px;
   line-height: 1.75;
   -webkit-font-smoothing: antialiased;
@@ -51,28 +49,35 @@ a:hover {
   color: var(--accent-hover);
 }
 
-button,
-a {
-  -webkit-tap-highlight-color: transparent;
+button {
+  font: inherit;
 }
 
-/* LANGUAGE LANDING SCREEN */
+/* ========================================
+   LANGUAGE SELECTION SCREEN
+   ======================================== */
 
-.language-landing {
-  min-height: 100svh;
+#language-landing {
+  min-height: 100vh;
+  min-height: 100dvh;
   width: 100%;
+  margin: 0;
+  padding: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 32px;
   background: #ffffff;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 .language-landing-content {
   width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
-  text-align: center;
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .language-landing-content h1 {
@@ -80,17 +85,17 @@ a {
 }
 
 .language-choices {
+  width: 100%;
   display: flex;
+  align-items: stretch;
   justify-content: center;
-  align-items: center;
-  gap: 30px;
-  flex-wrap: wrap;
+  gap: 24px;
 }
 
 .language-choice {
-  width: 300px;
-  height: 300px;
-  min-height: 300px;
+  flex: 1;
+  min-height: 90px;
+  max-width: 320px;
 
   display: flex;
   align-items: center;
@@ -98,42 +103,48 @@ a {
 
   padding: 24px;
 
-  color: #ffffff !important;
-  background-color: #2457c5 !important;
+  color: #ffffff;
+  background: #2457c5;
 
-  border: none !important;
-  border-radius: 16px !important;
+  border: 1px solid #2457c5;
+  border-radius: 12px;
 
-  font-size: 32px !important;
-  font-weight: 700 !important;
+  box-shadow: none;
+
+  font-size: clamp(1.25rem, 3vw, 1.6rem);
+  font-weight: 700;
   text-align: center;
+  text-decoration: none;
 
   cursor: pointer;
 
-  transition: transform 0.2s ease;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
 }
 
 .language-choice:hover {
-  color: #ffffff !important;
-  background-color: #2457c5 !important;
-  transform: scale(1.03);
+  color: #ffffff;
+  background: #19449e;
+  border-color: #19449e;
+  transform: translateY(-2px);
 }
 
-.language-choice:active {
-  color: #ffffff !important;
-  background-color: #2457c5 !important;
-  transform: scale(0.98);
-}
-
-.language-choice:focus,
 .language-choice:focus-visible {
-  color: #ffffff !important;
-  background-color: #2457c5 !important;
   outline: 3px solid #2457c5;
-  outline-offset: 5px;
+  outline-offset: 4px;
 }
 
-/* NAVIGATION */
+/* Hide portfolio until a language is selected */
+
+[hidden] {
+  display: none !important;
+}
+
+/* ========================================
+   NAVIGATION
+   ======================================== */
 
 header {
   position: sticky;
@@ -192,30 +203,32 @@ nav .brand {
   border-radius: 999px;
 }
 
-nav .language-switch a {
+nav button {
   padding: 7px 11px;
   color: var(--muted);
+  background: transparent;
   border: 0;
   border-radius: 999px;
   cursor: pointer;
   font-size: 0.85rem;
-  font-weight: 600;
   white-space: nowrap;
   transition: background 0.2s ease, color 0.2s ease;
 }
 
-nav .language-switch a:hover {
+nav button:hover {
   color: var(--text);
 }
 
-nav .language-switch a[aria-current="page"] {
+nav button[aria-pressed="true"] {
   color: #ffffff;
   background: var(--accent);
 }
 
-/* MAIN CONTENT */
+/* ========================================
+   MAIN LAYOUT
+   ======================================== */
 
-.portfolio-main {
+main {
   max-width: var(--content-width);
   margin: 0 auto;
   padding: 48px 28px 72px;
@@ -267,7 +280,9 @@ section > p {
   margin-top: 0;
 }
 
-/* SECTION LABELS */
+/* ========================================
+   SMALL SECTION LABELS
+   ======================================== */
 
 .eyebrow {
   margin: 0 0 14px;
@@ -278,7 +293,9 @@ section > p {
   text-transform: uppercase;
 }
 
-/* HERO */
+/* ========================================
+   HERO
+   ======================================== */
 
 .hero {
   min-height: 400px;
@@ -288,7 +305,11 @@ section > p {
   justify-content: center;
   align-items: flex-start;
   background:
-    radial-gradient(ellipse at top right, rgba(36, 87, 197, 0.10), transparent 55%),
+    radial-gradient(
+      ellipse at top right,
+      rgba(36, 87, 197, 0.10),
+      transparent 55%
+    ),
     var(--surface);
 }
 
@@ -346,7 +367,9 @@ section > p {
   background: var(--soft-accent);
 }
 
-/* CAREER FOCUS */
+/* ========================================
+   CAREER FOCUS
+   ======================================== */
 
 .career-list {
   margin: 24px 0 0;
@@ -367,7 +390,9 @@ section > p {
   font-weight: 750;
 }
 
-/* PROJECT GROUPS AND CARDS */
+/* ========================================
+   PROJECT GROUPS AND CARDS
+   ======================================== */
 
 .project-group {
   margin-top: 34px;
@@ -434,7 +459,9 @@ section > p {
   font-weight: 650;
 }
 
-/* SKILLS */
+/* ========================================
+   SKILLS
+   ======================================== */
 
 .skill-group {
   margin-top: 22px;
@@ -460,7 +487,9 @@ section > p {
   font-size: 0.9rem;
 }
 
-/* FOOTER */
+/* ========================================
+   FOOTER
+   ======================================== */
 
 footer {
   padding: 26px 20px 34px;
@@ -473,14 +502,19 @@ footer p {
   margin: 0;
 }
 
-/* KEYBOARD ACCESSIBILITY */
+/* ========================================
+   KEYBOARD ACCESSIBILITY
+   ======================================== */
 
-a:focus-visible {
+a:focus-visible,
+button:focus-visible {
   outline: 3px solid var(--accent);
   outline-offset: 4px;
 }
 
-/* TABLET */
+/* ========================================
+   TABLET AND MOBILE
+   ======================================== */
 
 @media (max-width: 900px) {
   .project-grid {
@@ -496,9 +530,20 @@ a:focus-visible {
   }
 }
 
-/* MOBILE */
-
 @media (max-width: 760px) {
+  #language-landing {
+    padding: 24px 16px;
+  }
+
+  .language-choices {
+    gap: 14px;
+  }
+
+  .language-choice {
+    min-height: 80px;
+    padding: 20px 14px;
+  }
+
   nav {
     padding: 12px 18px;
     flex-wrap: wrap;
@@ -518,7 +563,7 @@ a:focus-visible {
     font-size: 0.84rem;
   }
 
-  .portfolio-main {
+  main {
     padding: 24px 16px 42px;
   }
 
@@ -543,26 +588,23 @@ a:focus-visible {
   .project-group {
     margin-top: 28px;
   }
+}
 
-  .language-landing {
-    padding: 20px 16px;
+@media (max-width: 380px) {
+  #language-landing {
+    padding: 20px 12px;
   }
 
   .language-choices {
-    gap: 16px;
+    gap: 10px;
   }
 
   .language-choice {
-    width: 220px;
-    height: 220px;
-    min-height: 220px;
-    font-size: 28px !important;
+    min-height: 70px;
+    padding: 16px 10px;
+    font-size: 1.15rem;
   }
-}
 
-/* SMALL MOBILE */
-
-@media (max-width: 380px) {
   nav {
     padding: 12px;
   }
@@ -575,7 +617,7 @@ a:focus-visible {
     font-size: 0.76rem;
   }
 
-  nav .language-switch a {
+  nav button {
     padding: 6px 8px;
     font-size: 0.78rem;
   }
@@ -587,20 +629,11 @@ a:focus-visible {
   section {
     padding: 22px 18px;
   }
-
-  .language-choices {
-    flex-direction: column;
-  }
-
-  .language-choice {
-    width: 200px;
-    height: 200px;
-    min-height: 200px;
-    font-size: 26px !important;
-  }
 }
 
-/* RESPECT REDUCED-MOTION PREFERENCES */
+/* ========================================
+   RESPECT REDUCED-MOTION PREFERENCES
+   ======================================== */
 
 @media (prefers-reduced-motion: reduce) {
   html {
