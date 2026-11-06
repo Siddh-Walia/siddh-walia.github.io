@@ -1,4 +1,3 @@
-
 /* ========================================
    PROJECT TOKYO — PORTFOLIO DESIGN
    ======================================== */
@@ -53,20 +52,16 @@ button {
   font: inherit;
 }
 
-/* ========================================
-   LANGUAGE SELECTION SCREEN
-   ======================================== */
+/* Language selection screen */
 
 #language-landing {
   min-height: 100vh;
-  min-height: 100dvh;
-  width: 100%;
   margin: 0;
-  padding: 24px;
+  padding: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #ffffff;
+  background: var(--page-bg);
   border: 0;
   border-radius: 0;
   box-shadow: none;
@@ -74,18 +69,20 @@ button {
 
 .language-landing-content {
   width: 100%;
-  max-width: 600px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  max-width: 760px;
+  text-align: center;
 }
 
 .language-landing-content h1 {
-  display: none;
+  margin: 0 0 36px;
+  color: var(--text);
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 760;
+  line-height: 1.2;
+  letter-spacing: -0.04em;
 }
 
 .language-choices {
-  width: 100%;
   display: flex;
   align-items: stretch;
   justify-content: center;
@@ -94,45 +91,35 @@ button {
 
 .language-choice {
   flex: 1;
-  min-height: 90px;
+  min-height: 180px;
   max-width: 320px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
-  padding: 24px;
-
-  color: #ffffff;
-  background: #2457c5;
-
-  border: 1px solid #2457c5;
-  border-radius: 12px;
-
-  box-shadow: none;
-
-  font-size: clamp(1.25rem, 3vw, 1.6rem);
+  padding: 28px;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  font-size: clamp(1.4rem, 3vw, 2rem);
   font-weight: 700;
-  text-align: center;
-  text-decoration: none;
-
-  cursor: pointer;
-
   transition:
     background 0.2s ease,
+    color 0.2s ease,
     border-color 0.2s ease,
     transform 0.2s ease;
 }
 
 .language-choice:hover {
-  color: #ffffff;
-  background: #19449e;
-  border-color: #19449e;
-  transform: translateY(-2px);
+  color: var(--accent);
+  background: var(--soft-accent);
+  border-color: #b6c8ed;
+  transform: translateY(-3px);
 }
 
 .language-choice:focus-visible {
-  outline: 3px solid #2457c5;
+  outline: 3px solid var(--accent);
   outline-offset: 4px;
 }
 
@@ -142,9 +129,7 @@ button {
   display: none !important;
 }
 
-/* ========================================
-   NAVIGATION
-   ======================================== */
+/* Navigation */
 
 header {
   position: sticky;
@@ -224,9 +209,7 @@ nav button[aria-pressed="true"] {
   background: var(--accent);
 }
 
-/* ========================================
-   MAIN LAYOUT
-   ======================================== */
+/* Main layout */
 
 main {
   max-width: var(--content-width);
@@ -280,9 +263,7 @@ section > p {
   margin-top: 0;
 }
 
-/* ========================================
-   SMALL SECTION LABELS
-   ======================================== */
+/* Small section labels */
 
 .eyebrow {
   margin: 0 0 14px;
@@ -293,9 +274,7 @@ section > p {
   text-transform: uppercase;
 }
 
-/* ========================================
-   HERO
-   ======================================== */
+/* Hero */
 
 .hero {
   min-height: 400px;
@@ -367,9 +346,7 @@ section > p {
   background: var(--soft-accent);
 }
 
-/* ========================================
-   CAREER FOCUS
-   ======================================== */
+/* Career focus */
 
 .career-list {
   margin: 24px 0 0;
@@ -390,9 +367,7 @@ section > p {
   font-weight: 750;
 }
 
-/* ========================================
-   PROJECT GROUPS AND CARDS
-   ======================================== */
+/* Project groups and cards */
 
 .project-group {
   margin-top: 34px;
@@ -459,9 +434,7 @@ section > p {
   font-weight: 650;
 }
 
-/* ========================================
-   SKILLS
-   ======================================== */
+/* Skills */
 
 .skill-group {
   margin-top: 22px;
@@ -487,9 +460,7 @@ section > p {
   font-size: 0.9rem;
 }
 
-/* ========================================
-   FOOTER
-   ======================================== */
+/* Footer */
 
 footer {
   padding: 26px 20px 34px;
@@ -502,9 +473,7 @@ footer p {
   margin: 0;
 }
 
-/* ========================================
-   KEYBOARD ACCESSIBILITY
-   ======================================== */
+/* Keyboard accessibility */
 
 a:focus-visible,
 button:focus-visible {
@@ -512,9 +481,7 @@ button:focus-visible {
   outline-offset: 4px;
 }
 
-/* ========================================
-   TABLET AND MOBILE
-   ======================================== */
+/* Tablet and mobile */
 
 @media (max-width: 900px) {
   .project-grid {
@@ -535,12 +502,16 @@ button:focus-visible {
     padding: 24px 16px;
   }
 
+  .language-landing-content h1 {
+    margin-bottom: 28px;
+  }
+
   .language-choices {
     gap: 14px;
   }
 
   .language-choice {
-    min-height: 80px;
+    min-height: 140px;
     padding: 20px 14px;
   }
 
@@ -600,9 +571,9 @@ button:focus-visible {
   }
 
   .language-choice {
-    min-height: 70px;
+    min-height: 120px;
     padding: 16px 10px;
-    font-size: 1.15rem;
+    font-size: 1.25rem;
   }
 
   nav {
@@ -631,9 +602,7 @@ button:focus-visible {
   }
 }
 
-/* ========================================
-   RESPECT REDUCED-MOTION PREFERENCES
-   ======================================== */
+/* Respect reduced-motion preferences */
 
 @media (prefers-reduced-motion: reduce) {
   html {
