@@ -52,16 +52,21 @@ button {
   font: inherit;
 }
 
-/* Language selection screen */
+/* ========================================
+   LANGUAGE SELECTION SCREEN
+   ======================================== */
 
 #language-landing {
   min-height: 100vh;
+  min-height: 100dvh;
+  width: 100%;
   margin: 0;
-  padding: 32px;
+  padding: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--page-bg);
+
+  background: #ffffff;
   border: 0;
   border-radius: 0;
   box-shadow: none;
@@ -69,20 +74,14 @@ button {
 
 .language-landing-content {
   width: 100%;
-  max-width: 760px;
-  text-align: center;
-}
-
-.language-landing-content h1 {
-  margin: 0 0 36px;
-  color: var(--text);
-  font-size: clamp(2rem, 5vw, 3rem);
-  font-weight: 760;
-  line-height: 1.2;
-  letter-spacing: -0.04em;
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .language-choices {
+  width: 100%;
   display: flex;
   align-items: stretch;
   justify-content: center;
@@ -91,38 +90,86 @@ button {
 
 .language-choice {
   flex: 1;
-  min-height: 180px;
+  min-height: 90px;
   max-width: 320px;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 28px;
-  color: var(--text);
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  font-size: clamp(1.4rem, 3vw, 2rem);
+
+  padding: 24px;
+
+  color: #ffffff;
+  background: #2457c5;
+
+  border: 1px solid #2457c5;
+  border-radius: 12px;
+
+  box-shadow: none;
+
+  font-size: clamp(1.25rem, 3vw, 1.6rem);
   font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+
+  cursor: pointer;
+
   transition:
     background 0.2s ease,
-    color 0.2s ease,
     border-color 0.2s ease,
     transform 0.2s ease;
 }
 
 .language-choice:hover {
-  color: var(--accent);
-  background: var(--soft-accent);
-  border-color: #b6c8ed;
-  transform: translateY(-3px);
+  color: #ffffff;
+  background: #19449e;
+  border-color: #19449e;
+  transform: translateY(-2px);
 }
 
 .language-choice:focus-visible {
-  outline: 3px solid var(--accent);
+  outline: 3px solid #2457c5;
   outline-offset: 4px;
 }
 
+/* Hide portfolio until language is selected */
+
+[hidden] {
+  display: none !important;
+}
+
+/* Tablet and mobile */
+
+@media (max-width: 760px) {
+  #language-landing {
+    padding: 24px 16px;
+  }
+
+  .language-choices {
+    gap: 14px;
+  }
+
+  .language-choice {
+    min-height: 80px;
+    padding: 20px 14px;
+  }
+}
+
+@media (max-width: 380px) {
+  #language-landing {
+    padding: 20px 12px;
+  }
+
+  .language-choices {
+    gap: 10px;
+  }
+
+  .language-choice {
+    min-height: 70px;
+    padding: 16px 10px;
+    font-size: 1.15rem;
+  }
+}
 /* Hide portfolio until a language is selected */
 
 [hidden] {
