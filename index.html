@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,20 +10,113 @@
     content="Business analysis, process improvement, analytics, and digital transformation portfolio."
   >
 
-  <meta name="theme-color" content="#f7f8fa">
+  <meta name="theme-color" content="#ffffff">
 
   <title>Portfolio | ポートフォリオ</title>
 
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* Ensure hidden elements remain hidden */
+    [hidden] {
+      display: none !important;
+    }
+
+    /* LANGUAGE LANDING PAGE */
+    html,
+    body {
+      min-height: 100%;
+    }
+
+    body {
+      background: #ffffff;
+    }
+
+    .language-landing {
+      min-height: 100vh;
+      min-height: 100dvh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #ffffff;
+      padding: 24px;
+      box-sizing: border-box;
+    }
+
+    .language-landing-content {
+      width: 100%;
+      max-width: 600px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .language-choices {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 24px;
+      width: 100%;
+    }
+
+    .language-choice {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 1;
+      min-height: 90px;
+      padding: 24px;
+      box-sizing: border-box;
+
+      background: #2456c9;
+      color: #ffffff;
+
+      border: none;
+      border-radius: 12px;
+
+      font-family: inherit;
+      font-size: 24px;
+      font-weight: 600;
+      text-align: center;
+      text-decoration: none;
+
+      cursor: pointer;
+      transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+    }
+
+    .language-choice:hover {
+      background: #1947b5;
+      transform: translateY(-2px);
+    }
+
+    .language-choice:focus-visible {
+      outline: 3px solid #2456c9;
+      outline-offset: 4px;
+    }
+
+    @media (max-width: 480px) {
+      .language-choices {
+        gap: 14px;
+      }
+
+      .language-choice {
+        min-height: 75px;
+        padding: 18px 12px;
+        font-size: 20px;
+      }
+    }
+  </style>
 </head>
 
 <body>
   <!-- LANGUAGE SELECTION SCREEN -->
   <section id="language-landing" class="language-landing">
     <div class="language-landing-content">
-      <h1>Choose your language</h1>
-
       <div class="language-choices">
+
         <a
           class="language-choice language-choice-en"
           href="?lang=en"
@@ -34,6 +128,7 @@
           href="?lang=ja"
           lang="ja"
         >日本語</a>
+
       </div>
     </div>
   </section>
@@ -89,6 +184,7 @@
 
   <!-- EXISTING PORTFOLIO MAIN -->
   <main id="portfolio-main" hidden>
+
     <!-- HERO -->
     <section id="home" class="hero">
       <p class="eyebrow"
@@ -151,25 +247,30 @@
             data-ja="ITビジネスアナリシス・デジタルトランスフォーメーション">
           IT Business Analysis & Digital Transformation
         </li>
+
         <li data-en="Business Operations, Process Analytics & Process Improvement"
             data-ja="業務運営・業務分析・業務改善">
-          Business Operations, Process Analytics &amp; Process Improvement
+          Business Operations, Process Analytics & Process Improvement
         </li>
+
         <li data-en="Business Intelligence, Reporting & Data Analytics"
             data-ja="ビジネスインテリジェンス・レポーティング・データ分析">
-          Business Intelligence, Reporting &amp; Data Analytics
+          Business Intelligence, Reporting & Data Analytics
         </li>
+
         <li data-en="Solutions, Implementation & Pre-Sales"
             data-ja="ソリューション・導入支援・プリセールス">
-          Solutions, Implementation &amp; Pre-Sales
+          Solutions, Implementation & Pre-Sales
         </li>
+
         <li data-en="Product Analytics & Product Management"
             data-ja="プロダクト分析・プロダクトマネジメント">
-          Product Analytics &amp; Product Management
+          Product Analytics & Product Management
         </li>
+
         <li data-en="Management & Strategy Consulting"
             data-ja="経営・戦略コンサルティング">
-          Management &amp; Strategy Consulting
+          Management & Strategy Consulting
         </li>
       </ol>
     </section>
@@ -202,15 +303,18 @@
         <div class="project-grid">
           <article class="project-card">
             <p class="project-number">01</p>
+
             <h3 data-en="Enterprise Process & BI Transformation"
                 data-ja="企業業務プロセス・BI変革">
-              Enterprise Process &amp; BI Transformation
+              Enterprise Process & BI Transformation
             </h3>
+
             <p data-en="Requirements, process analysis, KPI design, BI architecture, and implementation planning."
                data-ja="要件定義、業務プロセス分析、KPI設計、BIアーキテクチャ、導入計画。">
               Requirements, process analysis, KPI design, BI architecture,
               and implementation planning.
             </p>
+
             <span class="project-status"
                   data-en="In development"
                   data-ja="制作予定">
@@ -220,15 +324,18 @@
 
           <article class="project-card">
             <p class="project-number">02</p>
+
             <h3 data-en="Business Process Automation & Data Quality"
                 data-ja="業務プロセス自動化・データ品質">
-              Business Process Automation &amp; Data Quality
+              Business Process Automation & Data Quality
             </h3>
+
             <p data-en="Process improvement, automated data preparation, validation, exception handling, and controls."
                data-ja="業務改善、データ処理の自動化、検証、例外処理、内部統制。">
               Process improvement, automated data preparation, validation,
               exception handling, and controls.
             </p>
+
             <span class="project-status"
                   data-en="In development"
                   data-ja="制作予定">
@@ -238,15 +345,18 @@
 
           <article class="project-card">
             <p class="project-number">03</p>
+
             <h3 data-en="Enterprise Transaction & Performance Intelligence"
                 data-ja="企業取引・業績インテリジェンス">
-              Enterprise Transaction &amp; Performance Intelligence
+              Enterprise Transaction & Performance Intelligence
             </h3>
+
             <p data-en="Transactional data modelling, KPI analysis, SQL, performance trends, and decision-focused reporting."
                data-ja="取引データモデリング、KPI分析、SQL、業績トレンド、意思決定を支援するレポーティング。">
               Transactional data modelling, KPI analysis, SQL,
               performance trends, and decision-focused reporting.
             </p>
+
             <span class="project-status"
                   data-en="In development"
                   data-ja="制作予定">
@@ -265,15 +375,18 @@
         <div class="project-grid">
           <article class="project-card">
             <p class="project-number">04</p>
+
             <h3 data-en="Enterprise Solution Design & Data Integration"
                 data-ja="企業向けソリューション設計・データ統合">
-              Enterprise Solution Design &amp; Data Integration
+              Enterprise Solution Design & Data Integration
             </h3>
+
             <p data-en="Requirements, data flows, interfaces, architecture trade-offs, testing, and implementation."
                data-ja="要件定義、データフロー、インターフェース、アーキテクチャの比較検討、テスト、導入。">
               Requirements, data flows, interfaces, architecture trade-offs,
               testing, and implementation.
             </p>
+
             <span class="project-status"
                   data-en="In development"
                   data-ja="制作予定">
@@ -283,15 +396,18 @@
 
           <article class="project-card">
             <p class="project-number">05</p>
+
             <h3 data-en="Digital Product & Customer Journey Analytics"
                 data-ja="デジタルプロダクト・顧客行動分析">
-              Digital Product &amp; Customer Journey Analytics
+              Digital Product & Customer Journey Analytics
             </h3>
+
             <p data-en="Customer journeys, funnels, engagement, retention, segmentation, and evidence-based product recommendations."
                data-ja="顧客行動、ファネル、エンゲージメント、継続率、セグメンテーション、データに基づく改善提案。">
               Customer journeys, funnels, engagement, retention, segmentation,
               and evidence-based product recommendations.
             </p>
+
             <span class="project-status"
                   data-en="In development"
                   data-ja="制作予定">
@@ -301,15 +417,18 @@
 
           <article class="project-card">
             <p class="project-number">06</p>
+
             <h3 data-en="Commercial Pipeline, Revenue & Customer Intelligence"
                 data-ja="営業パイプライン・収益・顧客インテリジェンス">
-              Commercial Pipeline, Revenue &amp; Customer Intelligence
+              Commercial Pipeline, Revenue & Customer Intelligence
             </h3>
+
             <p data-en="Pipeline conversion, forecasting assumptions, customer segmentation, and commercial performance."
                data-ja="営業パイプラインの転換率、予測の前提条件、顧客セグメンテーション、営業業績。">
               Pipeline conversion, forecasting assumptions, customer
               segmentation, and commercial performance.
             </p>
+
             <span class="project-status"
                   data-en="In development"
                   data-ja="制作予定">
@@ -328,15 +447,18 @@
         <div class="project-grid">
           <article class="project-card">
             <p class="project-number">07</p>
+
             <h3 data-en="Japanese Market Entry & Financial Decision Model"
                 data-ja="日本市場参入・財務意思決定モデル">
-              Japanese Market Entry &amp; Financial Decision Model
+              Japanese Market Entry & Financial Decision Model
             </h3>
+
             <p data-en="Japanese market research, transparent financial assumptions, scenario modelling, and sensitivity analysis."
                data-ja="日本市場調査、明確な財務上の前提条件、シナリオ分析、感度分析。">
               Japanese market research, transparent financial assumptions,
               scenario modelling, and sensitivity analysis.
             </p>
+
             <span class="project-status"
                   data-en="In development"
                   data-ja="制作予定">
@@ -346,15 +468,18 @@
 
           <article class="project-card">
             <p class="project-number">08</p>
+
             <h3 data-en="AI-Powered Enterprise Operations Transformation"
                 data-ja="AIを活用した企業業務変革">
               AI-Powered Enterprise Operations Transformation
             </h3>
+
             <p data-en="Source-grounded knowledge retrieval, answer evaluation, risk controls, and a practical transformation roadmap."
                data-ja="根拠資料に基づく情報検索、回答評価、リスク管理、実践的な業務変革ロードマップ。">
               Source-grounded knowledge retrieval, answer evaluation,
               risk controls, and a practical transformation roadmap.
             </p>
+
             <span class="project-status"
                   data-en="In development"
                   data-ja="制作予定">
@@ -374,7 +499,7 @@
       </p>
 
       <h2 data-en="Skills & languages" data-ja="スキル・言語">
-        Skills &amp; languages
+        Skills & languages
       </h2>
 
       <div class="skill-group">
@@ -382,6 +507,7 @@
             data-ja="ツール・テクノロジー">
           Tools and technologies
         </h3>
+
         <p>
           SQL · Python (Pandas) · Excel · VBA · Power Query · Power BI
         </p>
@@ -389,6 +515,7 @@
 
       <div class="skill-group">
         <h3 data-en="Languages" data-ja="言語">Languages</h3>
+
         <p data-en="English · Hindi · Japanese (JLPT N2)"
            data-ja="英語・ヒンディー語・日本語（JLPT N2）">
           English · Hindi · Japanese (JLPT N2)
@@ -415,7 +542,7 @@
 
       <p data-en="I hold a Bachelor of Business Administration in Banking & Finance from Jagannath University (2022–2025). My portfolio focuses on connecting business analysis, analytics, automation, and technology implementation."
          data-ja="ジャガンナート大学にて経営学学士（銀行・金融専攻）を取得しました（2022～2025年）。ビジネス分析、データ分析、自動化、テクノロジー導入をつなぐことをテーマに、ポートフォリオを制作しています。">
-        I hold a Bachelor of Business Administration in Banking &amp; Finance
+        I hold a Bachelor of Business Administration in Banking & Finance
         from Jagannath University (2022–2025). My portfolio focuses on
         connecting business analysis, analytics, automation, and technology
         implementation.
@@ -444,6 +571,7 @@
         projects, contact details will be provided here.
       </p>
     </section>
+
   </main>
 
   <!-- EXISTING PORTFOLIO FOOTER -->
@@ -470,7 +598,18 @@
       portfolioFooter.hidden = false;
     }
 
-    function setLanguage(language, savePreference = true) {
+    function showLanguageLanding() {
+      languageLanding.hidden = false;
+      portfolioHeader.hidden = true;
+      portfolioMain.hidden = true;
+      portfolioFooter.hidden = true;
+    }
+
+    function setLanguage(language, updateURL = true) {
+      if (language !== "en" && language !== "ja") {
+        return;
+      }
+
       document.documentElement.lang = language;
 
       document.querySelectorAll("[data-en][data-ja]").forEach(element => {
@@ -487,12 +626,22 @@
         String(language === "ja")
       );
 
-      if (savePreference) {
-        try {
-          localStorage.setItem("portfolio-language", language);
-        } catch (error) {
-          // The language switch works even if storage is unavailable.
-        }
+      if (updateURL) {
+        const url = new URL(window.location.href);
+
+        url.searchParams.set("lang", language);
+
+        history.pushState(
+          { language: language },
+          "",
+          url.pathname + url.search + url.hash
+        );
+      }
+
+      try {
+        localStorage.setItem("portfolio-language", language);
+      } catch (error) {
+        // Language switching still works if storage is unavailable.
       }
     }
 
@@ -504,13 +653,23 @@
       setLanguage("ja");
     });
 
-    const urlParameters = new URLSearchParams(window.location.search);
-    const requestedLanguage = urlParameters.get("lang");
+    function handleURLLanguage() {
+      const urlParameters = new URLSearchParams(window.location.search);
+      const requestedLanguage = urlParameters.get("lang");
 
-    if (requestedLanguage === "en" || requestedLanguage === "ja") {
-      showPortfolio();
-      setLanguage(requestedLanguage, true);
+      if (requestedLanguage === "en" || requestedLanguage === "ja") {
+        showPortfolio();
+        setLanguage(requestedLanguage, false);
+      } else {
+        showLanguageLanding();
+      }
     }
+
+    // Initial page load
+    handleURLLanguage();
+
+    // Browser back / forward navigation
+    window.addEventListener("popstate", handleURLLanguage);
   </script>
 </body>
 </html>
