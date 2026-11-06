@@ -1,3 +1,4 @@
+
 /* ========================================
    PROJECT TOKYO — PORTFOLIO DESIGN
    ======================================== */
@@ -65,7 +66,6 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-
   background: #ffffff;
   border: 0;
   border-radius: 0;
@@ -78,6 +78,10 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.language-landing-content h1 {
+  display: none;
 }
 
 .language-choices {
@@ -132,51 +136,15 @@ button {
   outline-offset: 4px;
 }
 
-/* Hide portfolio until language is selected */
-
-[hidden] {
-  display: none !important;
-}
-
-/* Tablet and mobile */
-
-@media (max-width: 760px) {
-  #language-landing {
-    padding: 24px 16px;
-  }
-
-  .language-choices {
-    gap: 14px;
-  }
-
-  .language-choice {
-    min-height: 80px;
-    padding: 20px 14px;
-  }
-}
-
-@media (max-width: 380px) {
-  #language-landing {
-    padding: 20px 12px;
-  }
-
-  .language-choices {
-    gap: 10px;
-  }
-
-  .language-choice {
-    min-height: 70px;
-    padding: 16px 10px;
-    font-size: 1.15rem;
-  }
-}
 /* Hide portfolio until a language is selected */
 
 [hidden] {
   display: none !important;
 }
 
-/* Navigation */
+/* ========================================
+   NAVIGATION
+   ======================================== */
 
 header {
   position: sticky;
@@ -256,7 +224,9 @@ nav button[aria-pressed="true"] {
   background: var(--accent);
 }
 
-/* Main layout */
+/* ========================================
+   MAIN LAYOUT
+   ======================================== */
 
 main {
   max-width: var(--content-width);
@@ -310,7 +280,9 @@ section > p {
   margin-top: 0;
 }
 
-/* Small section labels */
+/* ========================================
+   SMALL SECTION LABELS
+   ======================================== */
 
 .eyebrow {
   margin: 0 0 14px;
@@ -321,7 +293,9 @@ section > p {
   text-transform: uppercase;
 }
 
-/* Hero */
+/* ========================================
+   HERO
+   ======================================== */
 
 .hero {
   min-height: 400px;
@@ -393,7 +367,9 @@ section > p {
   background: var(--soft-accent);
 }
 
-/* Career focus */
+/* ========================================
+   CAREER FOCUS
+   ======================================== */
 
 .career-list {
   margin: 24px 0 0;
@@ -414,7 +390,9 @@ section > p {
   font-weight: 750;
 }
 
-/* Project groups and cards */
+/* ========================================
+   PROJECT GROUPS AND CARDS
+   ======================================== */
 
 .project-group {
   margin-top: 34px;
@@ -481,7 +459,9 @@ section > p {
   font-weight: 650;
 }
 
-/* Skills */
+/* ========================================
+   SKILLS
+   ======================================== */
 
 .skill-group {
   margin-top: 22px;
@@ -507,7 +487,9 @@ section > p {
   font-size: 0.9rem;
 }
 
-/* Footer */
+/* ========================================
+   FOOTER
+   ======================================== */
 
 footer {
   padding: 26px 20px 34px;
@@ -520,7 +502,9 @@ footer p {
   margin: 0;
 }
 
-/* Keyboard accessibility */
+/* ========================================
+   KEYBOARD ACCESSIBILITY
+   ======================================== */
 
 a:focus-visible,
 button:focus-visible {
@@ -528,7 +512,9 @@ button:focus-visible {
   outline-offset: 4px;
 }
 
-/* Tablet and mobile */
+/* ========================================
+   TABLET AND MOBILE
+   ======================================== */
 
 @media (max-width: 900px) {
   .project-grid {
@@ -549,16 +535,12 @@ button:focus-visible {
     padding: 24px 16px;
   }
 
-  .language-landing-content h1 {
-    margin-bottom: 28px;
-  }
-
   .language-choices {
     gap: 14px;
   }
 
   .language-choice {
-    min-height: 140px;
+    min-height: 80px;
     padding: 20px 14px;
   }
 
@@ -618,9 +600,9 @@ button:focus-visible {
   }
 
   .language-choice {
-    min-height: 120px;
+    min-height: 70px;
     padding: 16px 10px;
-    font-size: 1.25rem;
+    font-size: 1.15rem;
   }
 
   nav {
@@ -649,7 +631,9 @@ button:focus-visible {
   }
 }
 
-/* Respect reduced-motion preferences */
+/* ========================================
+   RESPECT REDUCED-MOTION PREFERENCES
+   ======================================== */
 
 @media (prefers-reduced-motion: reduce) {
   html {
