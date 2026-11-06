@@ -1,3 +1,419 @@
+/* ========================================
+   PROJECT TOKYO — PORTFOLIO DESIGN
+   ======================================== */
+
+:root {
+  color-scheme: light;
+  --page-bg: #f5f7fa;
+  --surface: #ffffff;
+  --text: #17212f;
+  --muted: #647184;
+  --accent: #2457c5;
+  --accent-hover: #19449e;
+  --border: #e1e6ed;
+  --soft-accent: #edf3ff;
+  --content-width: 1120px;
+  --radius: 14px;
+  --shadow: 0 8px 30px rgba(23, 33, 47, 0.05);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+body {
+  margin: 0;
+  background: var(--page-bg);
+  color: var(--text);
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Noto Sans", "Noto Sans JP", "Yu Gothic",
+    Meiryo, sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--accent-hover);
+}
+
+button {
+  font: inherit;
+}
+
+/* ========================================
+   LANGUAGE SELECTION SCREEN
+   ======================================== */
+
+#language-landing {
+  min-height: 100vh;
+  min-height: 100dvh;
+  width: 100%;
+  margin: 0;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.language-landing-content {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.language-landing-content h1 {
+  display: none;
+}
+
+.language-choices {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.language-choice {
+  width: 400px;
+  height: 250px;
+  flex: 0 0 250px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 24px;
+
+  color: #ffffff;
+  background: #2457c5;
+
+  border: 1px solid #2457c5;
+  border-radius: 20px;
+
+  box-shadow: none;
+
+  font-size: 5rem;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.language-choice:hover {
+  color: #ffffff;
+  background: #19449e;
+  border-color: #19449e;
+  transform: translateY(-2px);
+}
+
+.language-choice:focus-visible {
+  outline: 3px solid #2457c5;
+  outline-offset: 4px;
+}
+
+/* Hide portfolio until a language is selected */
+
+[hidden] {
+  display: none !important;
+}
+
+/* ========================================
+   NAVIGATION
+   ======================================== */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.96);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(12px);
+}
+
+nav {
+  max-width: var(--content-width);
+  min-height: 76px;
+  margin: 0 auto;
+  padding: 14px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 22px;
+}
+
+nav .brand {
+  flex-shrink: 0;
+  color: var(--text);
+  font-size: 1.05rem;
+  font-weight: 750;
+  letter-spacing: -0.03em;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+}
+
+.nav-links a {
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 550;
+  white-space: nowrap;
+}
+
+.nav-links a:hover {
+  color: var(--accent);
+}
+
+.language-switch {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 5px;
+  padding: 4px;
+  background: var(--page-bg);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+}
+
+nav button {
+  padding: 7px 11px;
+  color: var(--muted);
+  background: transparent;
+  border: 0;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+nav button:hover {
+  color: var(--text);
+}
+
+nav button[aria-pressed="true"] {
+  color: #ffffff;
+  background: var(--accent);
+}
+
+/* ========================================
+   MAIN LAYOUT
+   ======================================== */
+
+main {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 48px 28px 72px;
+}
+
+section {
+  margin-bottom: 24px;
+  padding: 36px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+section > p {
+  color: var(--muted);
+}
+
+section > p:not(.eyebrow) {
+  max-width: 800px;
+}
+
+h1,
+h2,
+h3,
+p {
+  overflow-wrap: anywhere;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--text);
+}
+
+h2 {
+  margin: 0 0 14px;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 720;
+  line-height: 1.3;
+  letter-spacing: -0.025em;
+}
+
+h3 {
+  line-height: 1.4;
+}
+
+section > p {
+  margin-top: 0;
+}
+
+/* ========================================
+   SMALL SECTION LABELS
+   ======================================== */
+
+.eyebrow {
+  margin: 0 0 14px;
+  color: var(--accent) !important;
+  font-size: 0.78rem;
+  font-weight: 750;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+/* ========================================
+   HERO
+   ======================================== */
+
+.hero {
+  min-height: 400px;
+  padding: 64px 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background:
+    radial-gradient(
+      ellipse at top right,
+      rgba(36, 87, 197, 0.10),
+      transparent 55%
+    ),
+    var(--surface);
+}
+
+.hero h1 {
+  max-width: 780px;
+  margin: 0 0 20px;
+  font-size: clamp(2.1rem, 5vw, 3.6rem);
+  font-weight: 760;
+  line-height: 1.13;
+  letter-spacing: -0.045em;
+}
+
+.hero > p:not(.eyebrow) {
+  max-width: 700px;
+  margin: 0;
+  font-size: 1.08rem;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 10px 19px;
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  font-size: 0.92rem;
+  font-weight: 650;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.button-primary {
+  color: #ffffff;
+  background: var(--accent);
+}
+
+.button-primary:hover {
+  color: #ffffff;
+  background: var(--accent-hover);
+}
+
+.button-secondary {
+  color: var(--accent);
+  background: #ffffff;
+}
+
+.button-secondary:hover {
+  background: var(--soft-accent);
+}
+
+/* ========================================
+   CAREER FOCUS
+   ======================================== */
+
+.career-list {
+  margin: 24px 0 0;
+  padding-left: 28px;
+}
+
+.career-list li {
+  padding: 10px 0 10px 6px;
+  border-bottom: 1px solid var(--border);
+}
+
+.career-list li:last-child {
+  border-bottom: 0;
+}
+
+.career-list li::marker {
+  color: var(--accent);
+  font-weight: 750;
+}
+
+/* ========================================
+   PROJECT GROUPS AND CARDS
+   ======================================== */
+
+.project-group {
+  margin-top: 34px;
+}
+
+.project-group > h3 {
+  margin: 0 0 16px;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.project-card {
+  min-width: 0;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
   align-items: flex-start;
   background: #ffffff;
   border: 1px solid var(--border);
@@ -157,3 +573,91 @@ button:focus-visible {
   .nav-links a {
     font-size: 0.84rem;
   }
+
+  main {
+    padding: 24px 16px 42px;
+  }
+
+  section {
+    margin-bottom: 16px;
+    padding: 26px 22px;
+  }
+
+  .hero {
+    min-height: 340px;
+    padding: 42px 26px;
+  }
+
+  .hero > p:not(.eyebrow) {
+    font-size: 1rem;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-group {
+    margin-top: 28px;
+  }
+}
+
+@media (max-width: 380px) {
+  #language-landing {
+    padding: 20px 12px;
+  }
+
+  .language-choices {
+    gap: 10px;
+  }
+
+  .language-choice {
+    max-width: 320px;
+    height: 220px;
+    flex-basis: 220px;
+    padding: 16px 10px;
+    font-size: 1.7rem;
+  }
+
+  nav {
+    padding: 12px;
+  }
+
+  .nav-links {
+    gap: 6px;
+  }
+
+  .nav-links a {
+    font-size: 0.76rem;
+  }
+
+  nav button {
+    padding: 6px 8px;
+    font-size: 0.78rem;
+  }
+
+  .hero {
+    padding: 34px 20px;
+  }
+
+  section {
+    padding: 22px 18px;
+  }
+}
+
+/* ========================================
+   RESPECT REDUCED-MOTION PREFERENCES
+   ======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
