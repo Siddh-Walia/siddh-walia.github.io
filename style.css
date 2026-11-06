@@ -93,8 +93,8 @@ button {
 
 .language-choice {
   width: 400px;
-  height: 400px;
-  flex: 0 0 400px;
+  height: 320px;
+  flex: 0 0 320px;
 
   display: flex;
   align-items: center;
@@ -110,7 +110,7 @@ button {
 
   box-shadow: none;
 
-  font-size: 2.5rem;
+  font-size: 4rem;
   font-weight: 700;
   text-align: center;
   text-decoration: none;
