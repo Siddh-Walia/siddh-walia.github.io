@@ -92,9 +92,9 @@ button {
 }
 
 .language-choice {
-  width: 500px;
-  height: 225px;
-  flex: 0 0 500px;
+  width: 400px;
+  height: 175px;
+  flex: 0 0 175px;
 
   display: flex;
   align-items: center;
